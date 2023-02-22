@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: a82948a4ea6d69243868f42af8a40ff4, type: 2}
 --- !u!1 &38545665
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,7 +778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84ea24f928d6dbd46ac85557d78d4d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 5316746148985204637}
+  target: {fileID: 2037302381677724543}
 --- !u!1 &441896033
 GameObject:
   m_ObjectHideFlags: 0
