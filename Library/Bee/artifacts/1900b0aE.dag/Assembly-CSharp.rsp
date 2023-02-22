@@ -352,6 +352,7 @@
 "Assets/Scripts/CameraMove.cs"
 "Assets/Scripts/FollowPlayer.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/ZombieAI.cs"
 -langversion:9.0
 
 /deterministic
