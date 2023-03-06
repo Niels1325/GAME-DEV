@@ -7,9 +7,6 @@ public class PlayerController : MonoBehaviour
     Rigidbody rb;
     [SerializeField] float movementSpeed = 6f;
 
-    [SerializeField] Transform groundCheck;
-    [SerializeField] LayerMask ground;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -25,18 +22,5 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector3(horizontalInput * movementSpeed, rb.velocity.y, verticalInput * movementSpeed);
     }
 
-//   private void OnCollisionEnter(Collision collision)
-//    {
-//        if (collision.gameObject.CompareTag("Enemy Head"))
-//        {
-//            Destroy(collision.transform.parent.gameObject);
-//            Jump();
-//        }
-//    }
-
-    bool IsGrounded()
-    {
-        return Physics.CheckSphere(groundCheck.position, .1f, ground);
-    }
 }
 

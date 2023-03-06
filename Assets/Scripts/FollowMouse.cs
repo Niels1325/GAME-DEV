@@ -5,21 +5,30 @@ using UnityEngine;
 public class FollowMouse : MonoBehaviour
 {
     // Start is called before the first frame update
-    Vector3 mousePosition;
-    public float moveSpeed = 1f;
+    private Rigidbody rb;
+    private Camera mainCamera;
 
-    Rigidbody rb;
-    Vector3 position = new Vector3(0f,0f,0f);
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
+
+        mainCamera = FindObjectOfType<Camera>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        var mousePos = Camera.main.ScreenToWorldPoint (new Vector3(Input.mousePosition.x,Input.mousePosition.y, Camera.main.transform.position.z-transform.position.z));
-        transform.LookAt (mousePos);
+        Ray CameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
+        Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
+        float rayLength;
+
+        if (groundPlane.Raycast(CameraRay, out rayLength)) {
+
+            Vector3 pointToLook = CameraRay.GetPoint(rayLength);
+            Debug.DrawLine(CameraRay.origin, pointToLook, Color.blue);
+
+            transform.LookAt(new Vector3(pointToLook.x, transform.position.y, pointToLook.z));
+        }
     }
 
 
