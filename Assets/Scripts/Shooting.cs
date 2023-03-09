@@ -8,7 +8,9 @@ public class Shooting : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
 
-    public float bulletForce = 20f;
+    public float bulletForce = 200f;
+
+    public Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,7 @@ public class Shooting : MonoBehaviour
     void Shoot() 
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Rigidbody rbB = GetComponent<Rigidbody>();
-        rbB.AddForce(firePoint.forward * bulletForce, ForceMode.Impulse);
+        //rb = GetComponent<Rigidbody>();
+        rb.AddForce(Vector3.up * bulletForce, ForceMode.Acceleration);
     }
 }
