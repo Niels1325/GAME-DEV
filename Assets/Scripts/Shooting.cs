@@ -37,6 +37,8 @@ public class Shooting : MonoBehaviour
         var instance = Instantiate(bulletPrefab, firePoint.transform.position, firePoint.rotation);
         instance.transform.LookAt(aim);
         //rb = GetComponent<Rigidbody>();
-        instance.GetComponent<Rigidbody>().AddRelativeForce(Vector3.up * bulletForce, ForceMode.Impulse);
+        instance.GetComponent<Rigidbody>().AddRelativeForce(Vector3.up * bulletForce, ForceMode.Impulse);   
     }
+
+    
 }
