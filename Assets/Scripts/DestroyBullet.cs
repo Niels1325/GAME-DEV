@@ -6,7 +6,8 @@ public class DestroyBullet : MonoBehaviour
 {
 
     public GameObject Bullet;
-    private void OnCollisionEnter (Collision collision) {
-                  Destroy (gameObject);
+
+    public void OnCollisionEnter (Collision collision) {
+            Destroy (gameObject);           
     }
 }
