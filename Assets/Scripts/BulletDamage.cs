@@ -11,15 +11,8 @@ public class BulletDamage : MonoBehaviour
 
         public void OnCollisionEnter (Collision collision) {
         //if(collision.gameObject.tag == "Zombie")
-        if(collision.gameObject == Zombie)
-        {
             //bulletAtm.DealDamage(zombieAtm.gameObject);
-            bulletAtm.DealDamage(zombieAtm.gameObject);
-            Debug.Log("check");
-        } else
-        {
-            Debug.Log("werkt niet");
-        }
+            zombieAtm.TakeDamage(33);
     }
 }
 
