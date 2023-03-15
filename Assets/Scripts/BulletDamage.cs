@@ -5,14 +5,18 @@ using UnityEngine;
 public class BulletDamage : MonoBehaviour
 {
     public AttributesManager zombieAtm;
-    public GameObject Zombie;
     public AttributesManager bulletAtm;
-    public GameObject Bullet;
+    public GameObject bullet;
 
-        public void OnCollisionEnter (Collision collision) {
-        //if(collision.gameObject.tag == "Zombie")
-            //bulletAtm.DealDamage(zombieAtm.gameObject);
-            zombieAtm.TakeDamage(33);
-    }
+    void OnCollisionEnter(Collision coll)
+    { 
+        if(coll.gameObject.tag == "bullet")
+        {
+            bulletAtm.DealDamage(zombieAtm.gameObject);
+            Debug.Log(zombieAtm.health);
+        } else
+        {
+            Debug.Log(coll + " test");
+        }
+    }   
 }
-

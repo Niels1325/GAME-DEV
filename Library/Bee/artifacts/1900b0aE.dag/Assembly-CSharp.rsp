@@ -359,7 +359,6 @@
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Shooting.cs"
-"Assets/Scripts/Test2.cs"
 "Assets/Scripts/ZombieAI.cs"
 -langversion:9.0
 
