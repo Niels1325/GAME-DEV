@@ -624,7 +624,6 @@ GameObject:
   - component: {fileID: 177962064}
   - component: {fileID: 177962063}
   - component: {fileID: 177962062}
-  - component: {fileID: 177962061}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Untagged
@@ -632,19 +631,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &177962061
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177962059}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 2.5, z: 1}
-  m_Center: {x: 0, y: 1.14, z: 0}
 --- !u!114 &177962062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2641,7 +2627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  attackDamage: 10
+  attackDamage: 1
 --- !u!65 &1876756486
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2734,6 +2720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombieAtm: {fileID: 1876756485}
   bulletAtm: {fileID: -2617492749059784818, guid: ca24e4be0729c67418b4e9dab3a7b81d, type: 3}
+  playerAtm: {fileID: 5775605097724648390}
   bullet: {fileID: 2772560413134310078, guid: ca24e4be0729c67418b4e9dab3a7b81d, type: 3}
 --- !u!1 &1882197449
 GameObject:
@@ -3091,7 +3078,7 @@ GameObject:
   - component: {fileID: 2111292745185855073}
   m_Layer: 0
   m_Name: Quandale_Dingle
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3187,7 +3174,7 @@ GameObject:
   - component: {fileID: 5775605097724648390}
   m_Layer: 0
   m_Name: Quandale_Dingle_LOD2
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

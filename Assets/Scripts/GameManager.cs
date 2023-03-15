@@ -6,7 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager gameManager { get; private set; }
 
-    
+    //public Text round;
+
+    private float fadeTime;
+    private bool fadingIn;
 
     void Awake()
     {
@@ -19,4 +22,21 @@ public class GameManager : MonoBehaviour
             gameManager = this;
         }
     }
+
+    void Start(){
+    //    round.CrossFadeAlpha(0, 0.0f, false);
+    //    fadeTime = 0;
+    //    fadingIn = false;
+    }
+
+    //void FadeIn()
+    //{
+    //    round.CrossFadeAlpha(1, 0.5f, false);
+    //    fadeTime += Time.deltaTime;
+    //    if(round.color.a == 1 && fadeTime > 1.5f)
+    //    {
+    //        fadingIn = false;
+    //        fadeTime = 0;
+    //    }
+    //}
 }
