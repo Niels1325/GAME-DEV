@@ -7,6 +7,8 @@ public class AttributesManager : MonoBehaviour
     public int health;
     public int attackDamage;
 
+    public bool isDestroyed = false;
+
     public void TakeDamage(int amount)
     {
         health -= amount;
@@ -26,6 +28,7 @@ public class AttributesManager : MonoBehaviour
         if(health < 1)
         {
             Destroy(this.gameObject);
+            isDestroyed = true;
         }
     }
 }

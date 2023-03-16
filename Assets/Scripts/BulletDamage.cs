@@ -9,15 +9,17 @@ public class BulletDamage : MonoBehaviour
     public AttributesManager playerAtm;
     public GameObject bullet;
 
+    public bool isDestroyed = false;
+
     void OnCollisionEnter(Collision coll)
     { 
         if(coll.gameObject.tag == "bullet")
         {
             bulletAtm.DealDamage(zombieAtm.gameObject);
-            Debug.Log("Zomie HP: " + zombieAtm.health);
+            //Debug.Log("Zomie HP: " + zombieAtm.health);
         }  else
         {
-            Debug.Log(coll + " test");
+            //Debug.Log(coll + " test");
         }
     }
     void OnCollisionStay(Collision coll)
@@ -25,7 +27,7 @@ public class BulletDamage : MonoBehaviour
         if (coll.gameObject.tag == "player")
         {
             zombieAtm.DealDamage(playerAtm.gameObject);
-            Debug.Log(" Player -10 " + "Current Player HP: " + playerAtm.health);
+            //Debug.Log(" Player -10 " + "Current Player HP: " + playerAtm.health);
         }
     }
 }
