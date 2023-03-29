@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\RandomSpawner.cs" />
      <Compile Include="Assets\Scripts\BulletDamage.cs" />
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
+     <Compile Include="Assets\Scripts\RoundSpawnSystem.cs" />
      <None Include="Assets\SkySeries Freebie\Hdri setup.txt" />
     <Reference Include="UnityEngine">
         <HintPath>S:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

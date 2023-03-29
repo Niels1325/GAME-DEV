@@ -359,6 +359,7 @@
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/RandomSpawner.cs"
 "Assets/Scripts/Rounds.cs"
+"Assets/Scripts/RoundSpawnSystem.cs"
 "Assets/Scripts/Shooting.cs"
 "Assets/Scripts/ZombieAI.cs"
 -langversion:9.0
