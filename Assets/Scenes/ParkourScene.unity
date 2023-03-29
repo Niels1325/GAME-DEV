@@ -632,7 +632,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   attackDamage: 1
-  isDestroyed: 0
 --- !u!1 &267028364
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,7 +1190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6201993545626007460, guid: 828c63d4fa368944f8f187f227035904, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.57
+      value: 6.37
       objectReference: {fileID: 0}
     - target: {fileID: 6201993545626007460, guid: 828c63d4fa368944f8f187f227035904, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1361,7 +1360,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   attackDamage: 1
-  isDestroyed: 0
 --- !u!1 &878607221 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6201993545626007487, guid: 828c63d4fa368944f8f187f227035904, type: 3}
@@ -1381,7 +1379,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   attackDamage: 1
-  isDestroyed: 0
 --- !u!1 &920548563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,7 +1487,6 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194230}
   - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
@@ -1578,19 +1574,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5479708372929613028}
---- !u!114 &963194230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17ad10b454fc22e4d9b700f1ef77d6ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panSpeed: 4
 --- !u!1 &979439235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1844,7 +1827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6201993545626007460, guid: 828c63d4fa368944f8f187f227035904, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.32
+      value: 3.22
       objectReference: {fileID: 0}
     - target: {fileID: 6201993545626007460, guid: 828c63d4fa368944f8f187f227035904, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1852,7 +1835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6201993545626007460, guid: 828c63d4fa368944f8f187f227035904, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.57
+      value: -11.61
       objectReference: {fileID: 0}
     - target: {fileID: 6201993545626007460, guid: 828c63d4fa368944f8f187f227035904, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3401,7 +3384,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   attackDamage: 33
-  isDestroyed: 0
 --- !u!1001 &6201993545467218932
 PrefabInstance:
   m_ObjectHideFlags: 0
