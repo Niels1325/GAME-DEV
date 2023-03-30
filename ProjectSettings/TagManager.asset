@@ -7,6 +7,7 @@ TagManager:
   - bullet
   - player
   - zombie
+  - text
   layers:
   - Default
   - TransparentFX
