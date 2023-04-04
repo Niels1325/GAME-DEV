@@ -8,6 +8,8 @@ TagManager:
   - player
   - zombie
   - text
+  - playertransform
+  - spawnpoint
   layers:
   - Default
   - TransparentFX
