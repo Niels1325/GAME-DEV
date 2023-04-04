@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using TMPro;
 
 public class Spawner : MonoBehaviour
 {
@@ -17,15 +18,18 @@ public class Spawner : MonoBehaviour
     //Welke ronde je zit.
     private int waveNumber = 0;
 
+    public string textValue;
+    public TMP_Text textElement;
+
     //De spawnpoints toevoegen als array zodat ik random spawn points kan zetten.
     GameObject[] spawnPoints;
     GameObject currentPoint;
     int index;
 
-    public Text gameOverText;
     // Start is called before the first frame update
     void Start()
     {
+        textElement.text = textValue;
         //Spawnpoints zoeken doormiddel van tag
         spawnPoints = GameObject.FindGameObjectsWithTag("spawnpoint");
         //Random spawnpoint.
@@ -33,12 +37,14 @@ public class Spawner : MonoBehaviour
         //De huidige spawnpoint
         currentPoint = spawnPoints[index];
         StartCoroutine(SpawnRound());
-        gameOverText.gameObject.SetActive(false);
+        //textElement.gameObject.SetActive(false);
+        textElement.transform.LookAt(Camera.main.transform);
     }
 
     // Update is called once per frame
     void Update()
     {
+        textElement.transform.LookAt(Camera.main.transform);
         //Constant zorgen dat de spawnpoint random is
         index = Random.Range(0, spawnPoints.Length);
         currentPoint = spawnPoints[index];
@@ -60,7 +66,9 @@ public class Spawner : MonoBehaviour
     void GameOver() 
     {
         //gameOverText.GetComponent<Text>().enabled = true;
-        gameOverText.gameObject.SetActive(true);
+        //gameOverText.gameObject.SetActive(true);
+        Debug.Log("Game Over Test");
+        //textElement.gameObject.SetActive(true);
         //gameOverText.text == "Victory Royale";
     }
 
