@@ -6,6 +6,9 @@ using TMPro;
 
 public class Spawner : MonoBehaviour
 {
+    //NavMeshAgent van zombie
+    //public GameObject nmaZombie;
+
     //Zombie prefab toevoegen zodat deze gespawned kan worden
     public GameObject zombiePrefab;
 
@@ -27,10 +30,13 @@ public class Spawner : MonoBehaviour
     GameObject[] spawnPoints;
     GameObject currentPoint;
     int index;
+    [SerializeField]
+    AnimationCurve spawnCurve;
 
     // Start is called before the first frame update
     void Start()
     {
+        //nmaZombie = GetComponent<UnityEngine.AI.NavMeshAgent>().speed;
         //Round nummer op 1 zetten.
         waveNumber = 0;
         //De tekst wat het moet zijn.
@@ -85,6 +91,8 @@ public class Spawner : MonoBehaviour
     {
         //Ronde gaat omhoog
         waveNumber++;
+        amountOfZombiesPerRound++;
+        //nmaZombie + 0.2f;
         //Checkt of er geen zombies zijn dan spawnen er zombies.
         for (int i = 0; i < amountOfZombiesPerRound; i++)
         {

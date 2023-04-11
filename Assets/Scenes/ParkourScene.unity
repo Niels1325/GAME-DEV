@@ -618,7 +618,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 373206504540692651, guid: 498fc2386816b254e848dea8d1ff4a70, type: 3}
   m_PrefabInstance: {fileID: 373206504382668026}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 373206504382668027}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38b6e3bb31de0d44fa5656f14d9965ff, type: 3}
@@ -1293,12 +1293,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44eceb75353b8e468a7879c49bc5947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nmaZombie: {fileID: 373206504382668027}
   zombiePrefab: {fileID: 373206505675530937, guid: 498fc2386816b254e848dea8d1ff4a70, type: 3}
   amountOfZombiesPerRound: 10
   timeBetweenRounds: 10
   textValue: Victory Royale
   textElement: {fileID: 502281042}
   btnElement: {fileID: 2091385471}
+  spawnCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &601063134
 Transform:
   m_ObjectHideFlags: 0
@@ -1331,12 +1338,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44eceb75353b8e468a7879c49bc5947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nmaZombie: {fileID: 0}
   zombiePrefab: {fileID: 373206505675530937, guid: 498fc2386816b254e848dea8d1ff4a70, type: 3}
   amountOfZombiesPerRound: 10
   timeBetweenRounds: 10
   textValue: Victory Royale
   textElement: {fileID: 502281042}
   btnElement: {fileID: 2091385471}
+  spawnCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.42286798
+      value: 0.08818811
+      inSlope: 0.7356342
+      outSlope: 0.7356342
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.66356885
+      value: 0.3676319
+      inSlope: 1.1771255
+      outSlope: 1.1771255
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.0041809
+      value: 0.9952812
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &659423703
 GameObject:
   m_ObjectHideFlags: 0
@@ -3351,6 +3401,11 @@ PrefabInstance:
       objectReference: {fileID: 502281042}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 498fc2386816b254e848dea8d1ff4a70, type: 3}
+--- !u!1 &373206504382668027 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 373206505675530937, guid: 498fc2386816b254e848dea8d1ff4a70, type: 3}
+  m_PrefabInstance: {fileID: 373206504382668026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1839375713672699910
 Transform:
   m_ObjectHideFlags: 0
