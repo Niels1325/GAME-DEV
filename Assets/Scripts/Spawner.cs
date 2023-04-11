@@ -18,6 +18,7 @@ public class Spawner : MonoBehaviour
     //Welke ronde je zit.
     private int waveNumber = 0;
 
+    //UI (victory en game over tekst en button voor restart)
     public string textValue;
     public TMP_Text textElement;
     public Button btnElement;
@@ -30,6 +31,9 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Round nummer op 1 zetten.
+        waveNumber = 0;
+        //De tekst wat het moet zijn.
         textElement.text = textValue;
         //Spawnpoints zoeken doormiddel van tag
         spawnPoints = GameObject.FindGameObjectsWithTag("spawnpoint");
@@ -37,7 +41,9 @@ public class Spawner : MonoBehaviour
         index = Random.Range(0, spawnPoints.Length);
         //De huidige spawnpoint
         currentPoint = spawnPoints[index];
+        //Start routine voor het spawnen van zombies.
         StartCoroutine(SpawnRound());
+        //UI inactief zetten, zodat het niet te zien is aan het begin.
         textElement.gameObject.SetActive(false);
         btnElement.gameObject.SetActive(false);
     }
@@ -65,13 +71,13 @@ public class Spawner : MonoBehaviour
 
     void GameOver() 
     {
-        //gameOverText.GetComponent<Text>().enabled = true;
-        //gameOverText.gameObject.SetActive(true);
-        Debug.Log("Game Over Test");
+        //Console log om te checken.
+        Debug.Log("Victory Test");
+        //Zet de ui actief.
         textElement.gameObject.SetActive(true);
         btnElement.gameObject.SetActive(true);
+        //De tijd op 0 zetten zodat alles op pauze staat.
         Time.timeScale = 0.0f;
-        //gameOverText.text == "Victory Royale";
     }
 
     //Spawnround functie
