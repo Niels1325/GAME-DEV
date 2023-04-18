@@ -15,7 +15,7 @@ public class Spawner : MonoBehaviour
     //Het aantal zombies dat per ronde spawned.
     public int amountOfZombiesPerRound = 10;
 
-    //Het tijd tussen rondes
+    //De tijd tussen rondes
     public float timeBetweenRounds = 10f;
 
     //Welke ronde je zit.
@@ -32,6 +32,18 @@ public class Spawner : MonoBehaviour
     int index;
     [SerializeField]
     AnimationCurve spawnCurve;
+
+    void Awake() {
+        //Het aantal zombies dat per ronde spawned.
+        amountOfZombiesPerRound = 10;
+        //De tijd tussen rondes resetten
+        timeBetweenRounds = 10f;
+        //Round nummer op 1 zetten.
+        waveNumber = 0;
+        //UI inactief zetten, zodat het niet te zien is aan het begin.
+        textElement.gameObject.SetActive(false);
+        btnElement.gameObject.SetActive(false);
+    }
 
     // Start is called before the first frame update
     void Start()

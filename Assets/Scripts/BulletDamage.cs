@@ -36,6 +36,17 @@ public class BulletDamage : MonoBehaviour
         btnElement.gameObject.SetActive(false);
     }
 
+    void Start() {
+        //Tijd op normale snelheid, (reset voor restart.)
+        Time.timeScale = 1.0f;
+        //Player health op 100 zetten.
+        playerAtm.health = 100;
+        //UI start inactief, zodat het niet zichtbaar is aan het begin.
+        textElement.text = textValue;
+        textElement.gameObject.SetActive(false);
+        btnElement.gameObject.SetActive(false);
+    }
+
     //Zodra er collision is word deze functie uitgevoerd.
     void OnCollisionEnter(Collision coll)
     { 
