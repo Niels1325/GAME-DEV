@@ -71,7 +71,7 @@ public class BulletDamage : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if(playerAtm.health < 1)
         {
