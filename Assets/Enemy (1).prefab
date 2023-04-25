@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &373206505675530937
+--- !u!1 &8121187457496471553
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 373206505675530941}
-  - component: {fileID: 373206505675530940}
-  - component: {fileID: 373206505675530943}
-  - component: {fileID: 373206504540692651}
-  - component: {fileID: 373206505675530942}
-  - component: {fileID: 373206505675530930}
+  - component: {fileID: 8121187457496472058}
+  - component: {fileID: 8121187457496471557}
+  - component: {fileID: 8121187457496471556}
+  - component: {fileID: 8473986282055022763}
+  - component: {fileID: 8121187457496471559}
+  - component: {fileID: 8121187457496471558}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: zombie
@@ -21,29 +21,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &373206505675530941
+--- !u!4 &8121187457496472058
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373206505675530937}
+  m_GameObject: {fileID: 8121187457496471553}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.32, y: -0.27, z: -6.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 373206505948286623}
+  - {fileID: 8473986280519999742}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!195 &373206505675530940
+--- !u!195 &8121187457496471557
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373206505675530937}
+  m_GameObject: {fileID: 8121187457496471553}
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
@@ -59,25 +59,25 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &373206505675530943
+--- !u!114 &8121187457496471556
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373206505675530937}
+  m_GameObject: {fileID: 8121187457496471553}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84ea24f928d6dbd46ac85557d78d4d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &373206504540692651
+--- !u!114 &8473986282055022763
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373206505675530937}
+  m_GameObject: {fileID: 8121187457496471553}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38b6e3bb31de0d44fa5656f14d9965ff, type: 3}
@@ -85,38 +85,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   attackDamage: 1
---- !u!114 &373206505675530942
+--- !u!114 &8121187457496471559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373206505675530937}
+  m_GameObject: {fileID: 8121187457496471553}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4aa9d38fb5d3b0f4381cb0e2f34220b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &373206505675530930
+--- !u!114 &8121187457496471558
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373206505675530937}
+  m_GameObject: {fileID: 8121187457496471553}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 169a22d341369214f83261c6b573da6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombieAtm: {fileID: 373206504540692651}
+  zombieAtm: {fileID: 8473986282055022763}
   bulletAtm: {fileID: -2617492749059784818, guid: ca24e4be0729c67418b4e9dab3a7b81d, type: 3}
   playerAtm: {fileID: 4810741974887675780, guid: 45e6921ec1cf62442a73767748160b1c, type: 3}
   bullet: {fileID: 2772560413134310078, guid: ca24e4be0729c67418b4e9dab3a7b81d, type: 3}
   textValue: Game Over
-  textElement: {fileID: 8860898221976855689, guid: 610ff9975af0cad48819873f89801ea8, type: 3}
-  btnElement: {fileID: 8535604795083784956, guid: 83cb81aaa8414f44c9eb64e283437c31, type: 3}
---- !u!1 &373206505948286622
+  textElement: {fileID: 7475870637167028514, guid: d7656d991caeaf54b8f1e3c58e4b1837, type: 3}
+  btnElement: {fileID: 3795948623481660820, guid: db5e33c53797f4c42a16bcf802037668, type: 3}
+  btnBackElement: {fileID: 6126821482345835661, guid: ed5d500fff25fca429dd9adc842185d1, type: 3}
+--- !u!1 &8473986280519999737
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,11 +125,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 373206505948286623}
-  - component: {fileID: 373206505948286611}
-  - component: {fileID: 373206505948286610}
-  - component: {fileID: 373206505948286621}
-  - component: {fileID: 373206505948286620}
+  - component: {fileID: 8473986280519999742}
+  - component: {fileID: 8473986280519999730}
+  - component: {fileID: 8473986280519999741}
+  - component: {fileID: 8473986280519999740}
+  - component: {fileID: 8473986280519999743}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -136,36 +137,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &373206505948286623
+--- !u!4 &8473986280519999742
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373206505948286622}
+  m_GameObject: {fileID: 8473986280519999737}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 373206505675530941}
+  m_Father: {fileID: 8121187457496472058}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &373206505948286611
+--- !u!33 &8473986280519999730
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373206505948286622}
+  m_GameObject: {fileID: 8473986280519999737}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &373206505948286610
+--- !u!23 &8473986280519999741
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373206505948286622}
+  m_GameObject: {fileID: 8473986280519999737}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -201,35 +202,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &373206505948286621
+--- !u!65 &8473986280519999740
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373206505948286622}
+  m_GameObject: {fileID: 8473986280519999737}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &373206505948286620
+--- !u!114 &8473986280519999743
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373206505948286622}
+  m_GameObject: {fileID: 8473986280519999737}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 169a22d341369214f83261c6b573da6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombieAtm: {fileID: 373206504540692651}
+  zombieAtm: {fileID: 8473986282055022763}
   bulletAtm: {fileID: -2617492749059784818, guid: ca24e4be0729c67418b4e9dab3a7b81d, type: 3}
   playerAtm: {fileID: 4810741974887675780, guid: 45e6921ec1cf62442a73767748160b1c, type: 3}
   bullet: {fileID: 2772560413134310078, guid: ca24e4be0729c67418b4e9dab3a7b81d, type: 3}
   textValue: Game Over
-  textElement: {fileID: 8860898221976855689, guid: 610ff9975af0cad48819873f89801ea8, type: 3}
-  btnElement: {fileID: 8535604795083784956, guid: 83cb81aaa8414f44c9eb64e283437c31, type: 3}
+  textElement: {fileID: 7475870637167028514, guid: d7656d991caeaf54b8f1e3c58e4b1837, type: 3}
+  btnElement: {fileID: 3795948623481660820, guid: db5e33c53797f4c42a16bcf802037668, type: 3}
+  btnBackElement: {fileID: 6126821482345835661, guid: ed5d500fff25fca429dd9adc842185d1, type: 3}

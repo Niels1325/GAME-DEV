@@ -22,6 +22,7 @@ public class BulletDamage : MonoBehaviour
     public string textValue;
     public TMP_Text textElement;
     public Button btnElement;
+    //public Button btnBackElement;
 
     //Meteen wanneer de game start gebeurt dit.
     void Awake()
@@ -34,6 +35,7 @@ public class BulletDamage : MonoBehaviour
         textElement.text = textValue;
         textElement.gameObject.SetActive(false);
         btnElement.gameObject.SetActive(false);
+        //btnBackElement.gameObject.SetActive(false);
     }
 
     void Start() {
@@ -45,6 +47,7 @@ public class BulletDamage : MonoBehaviour
         textElement.text = textValue;
         textElement.gameObject.SetActive(false);
         btnElement.gameObject.SetActive(false);
+        //btnBackElement.gameObject.SetActive(false);
     }
 
     //Zodra er collision is word deze functie uitgevoerd.
@@ -83,6 +86,7 @@ public class BulletDamage : MonoBehaviour
             //UI actief zetten.
             textElement.gameObject.SetActive(true);
             btnElement.gameObject.SetActive(true);
+            //btnBackElement.gameObject.SetActive(true);
             //Tijd op pauze zetten zodat er niet gespeeld meer kan worden.
             Time.timeScale = 0.1f;
             //gameOverText.text == "Victory Royale";
