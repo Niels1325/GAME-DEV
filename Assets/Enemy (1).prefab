@@ -84,6 +84,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   attackDamage: 2
+  scoreText: {fileID: 3205086236145625023, guid: 53de6c1578454d941919306e1823d049, type: 3}
+  scoreCount: 0
+  scoreTextValue: 
 --- !u!114 &8121187457496471558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,6 +107,7 @@ MonoBehaviour:
   textElement: {fileID: 5168522611782007764, guid: 610ff9975af0cad48819873f89801ea8, type: 3}
   btnElement: {fileID: 3432503505444568944, guid: 83cb81aaa8414f44c9eb64e283437c31, type: 3}
   btnBackElement: {fileID: 5511432387671243929, guid: ef53ee3cad3d2f94a88e2889340a651e, type: 3}
+  scoreCount: 0
 --- !u!1 &8473986280519999737
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,3 +226,4 @@ MonoBehaviour:
   textElement: {fileID: 7475870637167028514, guid: d7656d991caeaf54b8f1e3c58e4b1837, type: 3}
   btnElement: {fileID: 3795948623481660820, guid: db5e33c53797f4c42a16bcf802037668, type: 3}
   btnBackElement: {fileID: 6126821482345835661, guid: ed5d500fff25fca429dd9adc842185d1, type: 3}
+  scoreCount: 0

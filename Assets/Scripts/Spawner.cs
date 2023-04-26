@@ -12,6 +12,9 @@ public class Spawner : MonoBehaviour
     //Zombie prefab toevoegen zodat deze gespawned kan worden
     public GameObject zombiePrefab;
 
+    //Class voor de attributesmanager van de Zombie (in Unity word deze ingesteld)
+    public AttributesManager zombieAtm;
+
     //Het aantal zombies dat per ronde spawned.
     public int amountOfZombiesPerRound = 10;
 
@@ -20,12 +23,18 @@ public class Spawner : MonoBehaviour
 
     //Welke ronde je zit.
     private int waveNumber = 0;
+    //public int scoreCount = 0;
 
     //UI (victory en game over tekst en button voor restart)
     public string textValue;
+    public string roundTextValue;
     public TMP_Text textElement;
+    public TMP_Text roundText;
     public Button btnElement;
     public Button btnBackElement;
+
+    public bool EscapeMenuOpen = false;
+    
 
     //De spawnpoints toevoegen als array zodat ik random spawn points kan zetten.
     GameObject[] spawnPoints;
@@ -55,6 +64,17 @@ public class Spawner : MonoBehaviour
         waveNumber = 0;
         //De tekst wat het moet zijn.
         textElement.text = textValue;
+
+        roundText.text = roundTextValue;
+        //scoreText.text = scoreTextValue;
+
+        //Round text
+        roundTextValue = "Round: " + waveNumber;
+        roundText.text = roundTextValue;
+        //Score text
+        //scoreTextValue = "Score: " + scoreCount;
+        //scoreText.text = scoreTextValue;
+
         //Spawnpoints zoeken doormiddel van tag
         spawnPoints = GameObject.FindGameObjectsWithTag("spawnpoint");
         //Random spawnpoint.
@@ -86,6 +106,39 @@ public class Spawner : MonoBehaviour
         if (waveNumber == 10)
         {
             GameOver();
+        }
+
+        //Round text
+        roundTextValue = "Round: " + waveNumber;
+        roundText.text = roundTextValue;
+        //Score text
+        //scoreTextValue = "Score: " + scoreCount;
+        //scoreText.text = scoreTextValue;
+
+
+        //if (zombieAtm.health == 0) {
+        //    scoreCount += 100;
+        //    Debug.Log("test");
+        //}
+        if(Input.GetKeyDown(KeyCode.F1) && !EscapeMenuOpen){ 
+        EscapeMenuOpen = true;
+        //Console log om te checken.
+        Debug.Log("Escape Menu");
+        textValue = "Navigation";
+        textElement.text = textValue;
+        //Zet de ui actief.
+        textElement.gameObject.SetActive(true);
+        btnElement.gameObject.SetActive(true);
+        btnBackElement.gameObject.SetActive(true);
+        //De tijd op 0 zetten zodat alles op pauze staat.
+        Time.timeScale = 0.0f;
+        } else if (EscapeMenuOpen == true && Input.GetKeyDown(KeyCode.F1)) {
+            EscapeMenuOpen = false;
+            //UI inactief zetten.
+            textElement.gameObject.SetActive(false);
+            btnElement.gameObject.SetActive(false);
+            btnBackElement.gameObject.SetActive(false);
+            Time.timeScale = 1.0f;
         }
 
     }

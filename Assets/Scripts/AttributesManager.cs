@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
+using TMPro;
 
 public class AttributesManager : MonoBehaviour
 {
@@ -8,6 +10,8 @@ public class AttributesManager : MonoBehaviour
     public int health;
     //Attack damage int aanmaken zodat we voor elk object de attack damage kunnen instellen
     public int attackDamage;
+
+    public bool isDood = false;
 
     //Meteen wanneer de game start word dit uitgevoerd.
     //void Awake()
@@ -20,6 +24,9 @@ public class AttributesManager : MonoBehaviour
     {
         //Health van alles op 100 zetten.
         health = 100;
+
+        //Check of dood is op 0 zetten.
+        isDood = false;
     }
 
     //functie om damage te krijgen
@@ -45,8 +52,8 @@ public class AttributesManager : MonoBehaviour
     void Update()
     {
         //Als health onder 1 is word het object vernietigd uit de game.
-        if(health < 1)
-        {
+        if(health <= 0) {
+            isDood = true;
             Destroy(this.gameObject);
         }
     }
