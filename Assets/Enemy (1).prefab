@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8121187457496471557}
   - component: {fileID: 8121187457496471556}
   - component: {fileID: 8473986282055022763}
-  - component: {fileID: 8121187457496471559}
   - component: {fileID: 8121187457496471558}
   m_Layer: 0
   m_Name: Enemy (1)
@@ -84,19 +83,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  attackDamage: 1
---- !u!114 &8121187457496471559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8121187457496471553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4aa9d38fb5d3b0f4381cb0e2f34220b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  attackDamage: 2
 --- !u!114 &8121187457496471558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,9 +101,9 @@ MonoBehaviour:
   playerAtm: {fileID: 4810741974887675780, guid: 45e6921ec1cf62442a73767748160b1c, type: 3}
   bullet: {fileID: 2772560413134310078, guid: ca24e4be0729c67418b4e9dab3a7b81d, type: 3}
   textValue: Game Over
-  textElement: {fileID: 7475870637167028514, guid: d7656d991caeaf54b8f1e3c58e4b1837, type: 3}
-  btnElement: {fileID: 3795948623481660820, guid: db5e33c53797f4c42a16bcf802037668, type: 3}
-  btnBackElement: {fileID: 6126821482345835661, guid: ed5d500fff25fca429dd9adc842185d1, type: 3}
+  textElement: {fileID: 5168522611782007764, guid: 610ff9975af0cad48819873f89801ea8, type: 3}
+  btnElement: {fileID: 3432503505444568944, guid: 83cb81aaa8414f44c9eb64e283437c31, type: 3}
+  btnBackElement: {fileID: 5511432387671243929, guid: ef53ee3cad3d2f94a88e2889340a651e, type: 3}
 --- !u!1 &8473986280519999737
 GameObject:
   m_ObjectHideFlags: 0

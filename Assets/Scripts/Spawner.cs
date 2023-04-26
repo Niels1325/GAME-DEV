@@ -25,7 +25,7 @@ public class Spawner : MonoBehaviour
     public string textValue;
     public TMP_Text textElement;
     public Button btnElement;
-    public Button btnBElement;
+    public Button btnBackElement;
 
     //De spawnpoints toevoegen als array zodat ik random spawn points kan zetten.
     GameObject[] spawnPoints;
@@ -44,7 +44,7 @@ public class Spawner : MonoBehaviour
         //UI inactief zetten, zodat het niet te zien is aan het begin.
         textElement.gameObject.SetActive(false);
         btnElement.gameObject.SetActive(false);
-        btnBElement.gameObject.SetActive(false);
+        btnBackElement.gameObject.SetActive(false);
     }
 
     // Start is called before the first frame update
@@ -66,7 +66,7 @@ public class Spawner : MonoBehaviour
         //UI inactief zetten, zodat het niet te zien is aan het begin.
         textElement.gameObject.SetActive(false);
         btnElement.gameObject.SetActive(false);
-        btnBElement.gameObject.SetActive(false);
+        btnBackElement.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -94,10 +94,12 @@ public class Spawner : MonoBehaviour
     {
         //Console log om te checken.
         Debug.Log("Victory Test");
+        textValue = "Victory Royale";
+        textElement.text = textValue;
         //Zet de ui actief.
         textElement.gameObject.SetActive(true);
         btnElement.gameObject.SetActive(true);
-        btnBElement.gameObject.SetActive(true);
+        btnBackElement.gameObject.SetActive(true);
         //De tijd op 0 zetten zodat alles op pauze staat.
         Time.timeScale = 0.0f;
     }

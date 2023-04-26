@@ -10,11 +10,18 @@ public class AttributesManager : MonoBehaviour
     public int attackDamage;
 
     //Meteen wanneer de game start word dit uitgevoerd.
-    void Awake()
+    //void Awake()
+    //{
+        //Health van alles op 100 zetten.
+        //health = 100;
+    //}
+
+    void Start()
     {
         //Health van alles op 100 zetten.
         health = 100;
     }
+
     //functie om damage te krijgen
     public void TakeDamage(int amount)
     {
