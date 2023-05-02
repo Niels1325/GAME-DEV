@@ -24,11 +24,14 @@ public class BulletDamage : MonoBehaviour
 
     public int isHit = 0;
 
-    public int scoreCount = 0;
+    public int scoreCount;
 
-    public int addHundred = 100;
+    public int addHundred;
 
     public int Score;
+
+    public int prevScore;
+    public int newScore;
 
     //public int scoreCount = 0;
 
@@ -36,15 +39,17 @@ public class BulletDamage : MonoBehaviour
 
     void Start() {
         isHit = 0;
-        scoreCount = 0;
+        prevScore = 0;
+        newScore = 0;
         addHundred = 100;
+    
         //scoreText.text = scoreTextValue;
-        //Score = 0;
     }
 
-    public void Add100() {
+    /*public void Add100() {
             Score = scoreCount + addHundred;
-    }
+            Debug.Log(scoreTextValue);
+    }*/
 
     //Zodra er collision is word deze functie uitgevoerd.
     void OnCollisionEnter(Collision coll)
@@ -54,7 +59,7 @@ public class BulletDamage : MonoBehaviour
         {
             isHit++;
             bulletAtm.DealDamage(zombieAtm.gameObject);
-            Debug.Log(isHit);
+            //Debug.Log(isHit);
 
         }  else
         {
@@ -69,24 +74,27 @@ public class BulletDamage : MonoBehaviour
         if (coll.gameObject.tag == "playertransform")
         {
             zombieAtm.DealDamage(playerAtm.gameObject);
-            Debug.Log(" Player -10 " + "Current Player HP: " + playerAtm.health);
+            //Debug.Log(" Player -10 " + "Current Player HP: " + playerAtm.health);
         }
 
         
     }
 
+    
+
     void Update()
     {
+        //newScore = prevScore + addHundred;
         //scoreText.text = scoreTextValue;
-        if (isHit >= 3) {
-            Add100();
-            scoreTextValue = "Score: " + Score;
+        if (isHit == 3) {
+            //scoreTextValue = "Score: " + "" + newScore +"";
             //scoreTextValue = "Score: " + scoreCount + "";
-            isHit = 0;
-            Debug.Log(scoreTextValue);
+            
         } else {
-           scoreTextValue = "Score: " + Score;
+           //scoreTextValue = "Score: " + newScore;
         }
+        
+        prevScore = newScore;
         //scoreTextValue = "Score: " + Score;
         //scoreText.text = scoreTextValue;
         //Debug.Log(Score);
