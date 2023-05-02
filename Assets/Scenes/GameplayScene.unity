@@ -1554,6 +1554,7 @@ MonoBehaviour:
   roundText: {fileID: 345022937}
   btnElement: {fileID: 2091385471}
   btnBackElement: {fileID: 522112439}
+  EscapeMenuOpen: 0
 --- !u!1 &659423703
 GameObject:
   m_ObjectHideFlags: 0
@@ -4060,6 +4061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8121187457496471558, guid: 498fc2386816b254e848dea8d1ff4a70, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 3205086236145625023, guid: 53de6c1578454d941919306e1823d049, type: 3}
     - target: {fileID: 8121187457496471558, guid: 498fc2386816b254e848dea8d1ff4a70, type: 3}
       propertyPath: btnElement
       value: 

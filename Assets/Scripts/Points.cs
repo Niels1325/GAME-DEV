@@ -11,37 +11,37 @@ public class Points : MonoBehaviour
 
     public GameObject zombie;
 
-    public TMP_Text scoreText;
+    //public TMP_Text scoreText;
 
-    public int scoreCount = 0;
+    //public int scoreCount = 0;
 
-    public string scoreTextValue;
+    //public string scoreTextValue;
 
     void Awake() {
-        scoreCount = 0;
-        scoreText.text = scoreTextValue;
-        scoreTextValue = "Score: " + scoreCount;
+        //scoreCount = 0;
+        //scoreText.text = scoreTextValue;
+        //scoreTextValue = "Score: " + scoreCount;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        scoreCount = 0;
-        scoreText.text = scoreTextValue;
-        scoreTextValue = "Score: " + scoreCount;
+        //scoreCount = 0;
+        //scoreText.text = scoreTextValue;
+        //scoreTextValue = "Score: " + scoreCount;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(zombieAtm.isDood == true)
-        {
-            scoreCount = scoreCount + 100;
-            Debug.Log(scoreCount);
-            scoreTextValue = "Score: " + scoreCount;
-            scoreText.text = scoreTextValue;
-        }
-            scoreTextValue = "Score: " + scoreCount;
-            scoreText.text = scoreTextValue;
+        //if(zombieAtm.isDood == true)
+        //{
+        //    scoreCount = scoreCount + 100;
+        //    Debug.Log(scoreCount);
+        //    scoreTextValue = "Score: " + scoreCount;
+        //    scoreText.text = scoreTextValue;
+        //}
+        //    scoreTextValue = "Score: " + scoreCount;
+        //    scoreText.text = scoreTextValue;
     }
 }
