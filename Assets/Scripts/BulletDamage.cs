@@ -18,30 +18,30 @@ public class BulletDamage : MonoBehaviour
     //Class voor het object van de Bullet (in Unity word deze ingesteld)
     public GameObject bullet;
 
-    public TMP_Text scoreText;
+    //public TMP_Text scoreText;
 
-    public string scoreTextValue;
+    //public string scoreTextValue;
 
-    public int isHit = 0;
+    //public int isHit = 0;
 
-    public int scoreCount;
+    //public int scoreCount;
 
-    public int addHundred;
+    //public int addHundred;
 
-    public int Score;
+    //public int Score;
 
-    public int prevScore;
-    public int newScore;
+    //public int prevScore;
+    //public int newScore;
 
     //public int scoreCount = 0;
 
 
 
     void Start() {
-        isHit = 0;
-        prevScore = 0;
-        newScore = 0;
-        addHundred = 100;
+        //isHit = 0;
+        //prevScore = 0;
+        //newScore = 0;
+        //addHundred = 100;
     
         //scoreText.text = scoreTextValue;
     }
@@ -57,7 +57,7 @@ public class BulletDamage : MonoBehaviour
         //Als er alleen collision is met de bullet (elk object met de tag "bullet") krijgt de zombie de damage aantal dat is ingesteld op de bullet.
         if(coll.gameObject.tag == "bullet")
         {
-            isHit++;
+            //isHit++;
             bulletAtm.DealDamage(zombieAtm.gameObject);
             //Debug.Log(isHit);
 
@@ -86,15 +86,15 @@ public class BulletDamage : MonoBehaviour
     {
         //newScore = prevScore + addHundred;
         //scoreText.text = scoreTextValue;
-        if (isHit == 3) {
+        //if (isHit == 3) {
             //scoreTextValue = "Score: " + "" + newScore +"";
             //scoreTextValue = "Score: " + scoreCount + "";
             
-        } else {
+        //} else {
            //scoreTextValue = "Score: " + newScore;
-        }
+        //}
         
-        prevScore = newScore;
+        //prevScore = newScore;
         //scoreTextValue = "Score: " + Score;
         //scoreText.text = scoreTextValue;
         //Debug.Log(Score);

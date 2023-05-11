@@ -11,11 +11,11 @@ public class AttributesManager : MonoBehaviour
     //Attack damage int aanmaken zodat we voor elk object de attack damage kunnen instellen
     public int attackDamage;
 
-    public int prevScore = 0;
-    public int newScore = 0;
-    public int addHundred = 100;
+    //public int prevScore = 0;
+    //public int newScore = 0;
+    //public int addHundred = 100;
 
-    public bool isDood = false;
+    public bool isDead = false;
 
     //Meteen wanneer de game start word dit uitgevoerd.
     //void Awake()
@@ -30,7 +30,7 @@ public class AttributesManager : MonoBehaviour
         health = 100;
 
         //Check of dood is op 0 zetten.
-        isDood = false;
+        isDead = false;
     }
 
     //functie om damage te krijgen
@@ -53,21 +53,16 @@ public class AttributesManager : MonoBehaviour
         }
     }
 
-    public void Add100(int fprevScore, int fnewScore, int faddHundred) {           
-            fnewScore = fprevScore + faddHundred;
-            newScore = fnewScore;
-    }
-
     void Update()
     {
         //Als health onder 1 is word het object vernietigd uit de game.
         if(health <= 0) {
-            isDood = true;
-            Add100(prevScore, newScore, addHundred);
-            Debug.Log(newScore);
-            Debug.Log(prevScore);
-            //Debug.Log(Score);
+            isDead = true;
+            Debug.Log(isDead);
             Destroy(this.gameObject);
+        } else
+        {
+            isDead = false;
         }
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.21108195, g: 0.05813718, b: 0.03601958, a: 1}
+  m_IndirectSpecularColor: {r: 0.21111889, g: 0.05814965, b: 0.036026325, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1591,6 +1591,28 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3205086236145625022, guid: 53de6c1578454d941919306e1823d049, type: 3}
   m_PrefabInstance: {fileID: 3205086236691687414}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &693889883 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3205086236145625009, guid: 53de6c1578454d941919306e1823d049, type: 3}
+  m_PrefabInstance: {fileID: 3205086236691687414}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &693889886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693889883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ab34b65c1712046823f5a7c4560abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombieAtm: {fileID: 8473986282055022763, guid: 498fc2386816b254e848dea8d1ff4a70, type: 3}
+  scoreText: {fileID: 3205086236145625023, guid: 53de6c1578454d941919306e1823d049, type: 3}
+  scoreTextValue: 
+  scoreCount: 0
+  Score: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -4239,6 +4261,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombieAtm: {fileID: 8473986282055022763, guid: 498fc2386816b254e848dea8d1ff4a70, type: 3}
   zombie: {fileID: 8121187457496471553, guid: 498fc2386816b254e848dea8d1ff4a70, type: 3}
-  scoreText: {fileID: 3205086236145625023, guid: 53de6c1578454d941919306e1823d049, type: 3}
-  scoreCount: 0
-  scoreTextValue: 
