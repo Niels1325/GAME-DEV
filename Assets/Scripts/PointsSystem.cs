@@ -17,13 +17,24 @@ public class PointsSystem : MonoBehaviour
     //public int addHundred = 100;
 
     public int Score;
+    public static PointsSystem PS;
+    private void Awake()
+    {
+        if (PS == null)
+        {
+            PS = this;
 
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(zombieAtm.name + zombieAtm.isDead);
-        zombieAtm.isDead = false;
         scoreCount = 0;
+        scoreText.text = "Score " + 0;
         //addHundred = 100;
         Score = scoreCount;
         //ZombieLength = GameObject.FindGameObjectsWithTag("zombie").Length;
@@ -33,19 +44,8 @@ public class PointsSystem : MonoBehaviour
     void Update()
     {
 
-        if (zombieAtm.isDead == true) {
-            scoreCount = scoreCount + 100;
-            Score = scoreCount;
-            //zombieAtm.isDead = false;
-            Debug.Log(Score);
-            Debug.Log(zombieAtm.isDead);
-            return;
-        } else {
-            Score = scoreCount;
-            Debug.Log(Score);
-            Debug.Log(zombieAtm.isDead);
-        }
-        scoreTextValue = "Score: " + Score;
+       
+        scoreTextValue = "Score: " + scoreCount;
         scoreText.text = scoreTextValue;
         Debug.Log(Score);
     }

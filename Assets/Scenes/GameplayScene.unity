@@ -1596,7 +1596,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3205086236145625009, guid: 53de6c1578454d941919306e1823d049, type: 3}
   m_PrefabInstance: {fileID: 3205086236691687414}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &693889886
+--- !u!114 &693889887 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3205086236145625023, guid: 53de6c1578454d941919306e1823d049, type: 3}
+  m_PrefabInstance: {fileID: 3205086236691687414}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693889883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &693889889
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1608,8 +1619,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6ab34b65c1712046823f5a7c4560abb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombieAtm: {fileID: 8473986282055022763, guid: 498fc2386816b254e848dea8d1ff4a70, type: 3}
-  scoreText: {fileID: 3205086236145625023, guid: 53de6c1578454d941919306e1823d049, type: 3}
+  zombieAtm: {fileID: 0}
+  scoreText: {fileID: 693889887}
   scoreTextValue: 
   scoreCount: 0
   Score: 0

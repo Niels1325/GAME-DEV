@@ -59,6 +59,7 @@ public class AttributesManager : MonoBehaviour
         if(health <= 0) {
             isDead = true;
             Debug.Log(isDead);
+            PointsSystem.PS.scoreCount += 100;
             Destroy(this.gameObject);
         } else
         {
