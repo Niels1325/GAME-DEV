@@ -11,26 +11,10 @@ public class AttributesManager : MonoBehaviour
     //Attack damage int aanmaken zodat we voor elk object de attack damage kunnen instellen
     public int attackDamage;
 
-    //public int prevScore = 0;
-    //public int newScore = 0;
-    //public int addHundred = 100;
-
-    public bool isDead = false;
-
-    //Meteen wanneer de game start word dit uitgevoerd.
-    //void Awake()
-    //{
-        //Health van alles op 100 zetten.
-        //health = 100;
-    //}
-
     void Start()
     {
         //Health van alles op 100 zetten.
         health = 100;
-
-        //Check of dood is op 0 zetten.
-        isDead = false;
     }
 
     //functie om damage te krijgen
@@ -55,15 +39,13 @@ public class AttributesManager : MonoBehaviour
 
     void Update()
     {
-        //Als health onder 1 is word het object vernietigd uit de game.
+        //Als health onder 1 is word het object vernietigd uit de game en 100 punten toegevoegd aan score.
         if(health <= 0) {
-            isDead = true;
-            Debug.Log(isDead);
+            //Add 100 to score when zombie is dead
             PointsSystem.PS.scoreCount += 100;
             Destroy(this.gameObject);
         } else
         {
-            isDead = false;
         }
     }
 }

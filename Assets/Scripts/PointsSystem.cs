@@ -6,18 +6,17 @@ using TMPro;
 
 public class PointsSystem : MonoBehaviour
 {
-    public AttributesManager zombieAtm;
-
+    //UI Score text
     public TMP_Text scoreText;
 
     public string scoreTextValue;
 
     public int scoreCount = 0;
 
-    //public int addHundred = 100;
-
-    public int Score;
+    //Static pointssystem singulator
     public static PointsSystem PS;
+
+    //Wanneer de game start word dit gelijk uitgevoerd
     private void Awake()
     {
         if (PS == null)
@@ -27,26 +26,23 @@ public class PointsSystem : MonoBehaviour
         }
         else
         {
+            //Wanneer er meer dan 1 puntensysteem is word deze verwijderd.
             Destroy(this);
         }
     }
     // Start is called before the first frame update
     void Start()
     {
+        //Zet score count op 0
         scoreCount = 0;
         scoreText.text = "Score " + 0;
-        //addHundred = 100;
-        Score = scoreCount;
-        //ZombieLength = GameObject.FindGameObjectsWithTag("zombie").Length;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-       
+        //Update de UI met de huidige score
         scoreTextValue = "Score: " + scoreCount;
         scoreText.text = scoreTextValue;
-        Debug.Log(Score);
     }
 }
