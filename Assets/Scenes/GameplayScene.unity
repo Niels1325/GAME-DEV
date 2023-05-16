@@ -1619,11 +1619,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6ab34b65c1712046823f5a7c4560abb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombieAtm: {fileID: 0}
   scoreText: {fileID: 693889887}
   scoreTextValue: 
   scoreCount: 0
-  Score: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -4163,6 +4161,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1839375713672699910}
     m_Modifications:
+    - target: {fileID: 1361250827734835988, guid: 45e6921ec1cf62442a73767748160b1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3667341615468500507, guid: 45e6921ec1cf62442a73767748160b1c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4215,6 +4217,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: playertransform
       objectReference: {fileID: 0}
+    - target: {fileID: 4810741974887675777, guid: 45e6921ec1cf62442a73767748160b1c, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 4810741974887675780, guid: 45e6921ec1cf62442a73767748160b1c, type: 3}
       propertyPath: health
       value: 100
@@ -4223,6 +4229,10 @@ PrefabInstance:
       propertyPath: playerAtm
       value: 
       objectReference: {fileID: 9146483735614839553}
+    - target: {fileID: 5883332732542550357, guid: 45e6921ec1cf62442a73767748160b1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45e6921ec1cf62442a73767748160b1c, type: 3}
 --- !u!4 &9146483735614839552 stripped
