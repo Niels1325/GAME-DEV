@@ -6,10 +6,10 @@ using TMPro;
 
 public class FinishGameMenu : MonoBehaviour
 {
-    //Class voor de attributesmanager van de Player (in Unity word deze ingesteld)
+    //Variable voor de attributesmanager van de Player (in Unity word deze ingesteld)
     public AttributesManager playerAtm;
 
-    //class voor UI tekst en buttons voor game over of victory. (in dit geval voor game over)
+    //Variable voor UI tekst en buttons voor game over of victory. (in dit geval voor game over)
     public string textValue;
     public TMP_Text textElement;
     public Button btnElement;

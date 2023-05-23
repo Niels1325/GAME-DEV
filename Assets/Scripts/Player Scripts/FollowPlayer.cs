@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour {
 
-    //Class voor player's positie/status (word in Unity ingesteld)
+    //Variable voor player's positie/status (word in Unity ingesteld)
     public Transform player;
 
 

@@ -1933,7 +1933,6 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
-  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2033,18 +2032,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: 0
---- !u!114 &963194231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db8fcaac1d8842945a57a38eda0b0692, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &979439235
 GameObject:
   m_ObjectHideFlags: 0
@@ -4268,17 +4255,3 @@ MonoBehaviour:
   textElement: {fileID: 502281042}
   btnElement: {fileID: 2091385471}
   btnBackElement: {fileID: 522112439}
---- !u!114 &9146483735614839562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036727711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20194d84d680d664ebc98dc1b3d82355, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zombieAtm: {fileID: 8473986282055022763, guid: 498fc2386816b254e848dea8d1ff4a70, type: 3}
-  zombie: {fileID: 8121187457496471553, guid: 498fc2386816b254e848dea8d1ff4a70, type: 3}

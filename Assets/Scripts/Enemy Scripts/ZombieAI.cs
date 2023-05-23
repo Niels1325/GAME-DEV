@@ -5,23 +5,18 @@ using UnityEngine.AI;
 
 public class ZombieAI : MonoBehaviour
 {
-    //[SerializeField] private GameObject target;
-    //Class voor NavMeshAgent (functie in Unity voor automatische beweging)
+    //Variable voor NavMeshAgent (functie in Unity voor automatische beweging)
     NavMeshAgent nm;
 
+    //Variable voor target (deze transform is dus de player)
     private Transform target;
-
-    //Class voor waar dit object (zombie) heen moet lopen (in dit geval target aka player).
-    //public Transform target = Transform.FindGameObjectsWithTag("player");
-
-    //gameObject.tag = "player";
 
     // Start is called before the first frame update
     void Start()
     {
-        //navmeshagent is de navmeshagent van de zombie.
+        //Pak de component Nav Mesh Agent van de zombie en deze word nm genoemd
         nm = GetComponent<NavMeshAgent>();
-        //Zet target op de player via deze tag
+        //Zet target op de player via deze tag "playertransform"
         target = GameObject.FindWithTag("playertransform").transform;
     }
 

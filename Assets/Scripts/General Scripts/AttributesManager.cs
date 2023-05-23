@@ -6,9 +6,9 @@ using TMPro;
 
 public class AttributesManager : MonoBehaviour
 {
-    //Health int aanmaken zodat we voor elk object health kunnen instellen
+    //Health int variable aanmaken zodat we voor elk object health kunnen instellen
     public int health;
-    //Attack damage int aanmaken zodat we voor elk object de attack damage kunnen instellen
+    //Attack damage int variable aanmaken zodat we voor elk object de attack damage kunnen instellen
     public int attackDamage;
 
     void Start()

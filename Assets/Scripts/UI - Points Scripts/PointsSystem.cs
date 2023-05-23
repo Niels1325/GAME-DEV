@@ -6,11 +6,13 @@ using TMPro;
 
 public class PointsSystem : MonoBehaviour
 {
-    //UI Score text
+    //variable voor UI Score text
     public TMP_Text scoreText;
 
+    //Variable voor de score text om de tekst te kunnen aanpassen doormiddel van een string
     public string scoreTextValue;
 
+    //Variable voor de score counter met waarde 0.
     public int scoreCount = 0;
 
     //Static pointssystem singulator
